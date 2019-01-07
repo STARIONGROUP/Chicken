@@ -26,8 +26,8 @@ Development |  [![Build Status](https://ci.appveyor.com/api/projects/status/XXX/
 
 # License
 
-The **Chicken** is provided to under the GNU General Public License. The license can be found [here](LICENSE).
+The **Chicken** is provided to under the GNU Lesser General Public License.
 
 # Contributions
 
-Contributions to the code-base are welcome. However, before we can accept your contributions we ask any contributor to sign the Contributor License Agreement (CLA) and send this digitaly signed to s.gerene@rheagroup.com. You can find the CLA's in the CLA folder.
+Contributions to the **Chicken** code-base are welcome. However, before we can accept your contributions we ask any contributor to sign the Contributor License Agreement (CLA) and send this digitaly signed to s.gerene@rheagroup.com. You can find the CLA's in the CLA folder.
