@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IChicken.cs" company="RHEA System S.A.">
+// <copyright file="IHen.cs" company="RHEA System S.A.">
 //    Copyright (c) 2019 RHEA System S.A.
 //
 //    Author: Sam Gerené
@@ -24,17 +24,8 @@
 
 namespace Chicken
 {
-    /// <summary>
-    /// A type of domesticated fowl, a subspecies of the red junglefowl; scientific name: Gallus gallus domesticus
-    /// </summary>
-    public interface IChicken
+    interface IHen : IChicken
     {
-        void Fight(IChicken chicken);
 
-        void Bathe();
-
-        void Walk();
-
-        void Fly();
     }
 }

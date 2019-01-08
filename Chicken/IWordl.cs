@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IChicken.cs" company="RHEA System S.A.">
+// <copyright file="IWorld.cs" company="RHEA System S.A.">
 //    Copyright (c) 2019 RHEA System S.A.
 //
 //    Author: Sam Gerené
@@ -25,16 +25,18 @@
 namespace Chicken
 {
     /// <summary>
-    /// A type of domesticated fowl, a subspecies of the red junglefowl; scientific name: Gallus gallus domesticus
+    /// The place all chickens live
     /// </summary>
-    public interface IChicken
+    public interface IWorld
     {
-        void Fight(IChicken chicken);
+        /// <summary>
+        /// Starts the world
+        /// </summary>
+        void Start();
 
-        void Bathe();
-
-        void Walk();
-
-        void Fly();
+        /// <summary>
+        /// Ends the world
+        /// </summary>
+        void End();
     }
 }
