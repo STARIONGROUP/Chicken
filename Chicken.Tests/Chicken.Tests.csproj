@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <Company>RHEA System S.A.</Company>
+    <Description>Chicken netcore unit tests</Description>
+    <Copyright>Copyright © RHEA System S.A.</Copyright>
+    <RepositoryUrl>https://github.com/RHEAGROUP/Chicken.git</RepositoryUrl>
+<Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

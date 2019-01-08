@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Chicken</Title>
+    <Version>0.1.0</Version>
+    <Description>A C# library that can be used to lay eggs, grow chickens and deepfry nugets</Description>
+    <Copyright>Copyright © RHEA System S.A.</Copyright>
+    <Authors>Sam Gerené</Authors>
+    <PackageId>Chicken</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageIconUrl>https://raw.githubusercontent.com/RHEAGROUP/Chicken/master/docs/chicken-icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/RHEAGROUP/Chicken.git</RepositoryUrl>
+    <PackageTags>Chicken Fowl</PackageTags>
+    <PackageLicenseUrl>https://github.com/RHEAGROUP/Chicken/blob/master/COPYING.LESSER</PackageLicenseUrl>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
 </Project>

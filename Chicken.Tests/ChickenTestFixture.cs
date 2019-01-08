@@ -24,7 +24,19 @@
 
 namespace Chicken.Tests
 {
+    using NUnit.Framework;
+
+    [TestFixture]
     public class ChickenTestFixture
     {
+        [SetUp]
+        public void SetUp()
+        {
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+        }
     }
 }
