@@ -38,5 +38,11 @@ namespace Chicken
         /// Ends the world
         /// </summary>
         void End();
+
+        /// <summary>
+        /// Gets or sets the speed at which the time in the <see cref="IWorld"/> passes. The default is one, which indicates
+        /// that the clock goes at nominal speed, 2 indicates the clock goes twice as fast, etc.
+        /// </summary>
+        int ClockSpeed { get; set; }
     }
 }

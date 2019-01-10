@@ -29,12 +29,46 @@ namespace Chicken
     /// </summary>
     public interface IChicken
     {
+        /// <summary>
+        /// take part in a violent struggle involving the exchange of physical blows
+        /// </summary>
+        /// <param name="chicken"></param>
         void Fight(IChicken chicken);
 
+        /// <summary>
+        /// wash by immersing one's body in dust.
+        /// </summary>
         void Bathe();
 
+        /// <summary>
+        /// move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once.
+        /// </summary>
         void Walk();
 
+        /// <summary>
+        /// Move through the air using wings
+        /// </summary>
         void Fly();
+
+        /// <summary>
+        /// Put (food) into beak and swallow it.
+        /// </summary>
+        void Eat();
+
+        /// <summary>
+        /// Make a short, low sound
+        /// </summary>
+        void Cluck();
+
+        /// <summary>
+        /// Gets the age of the <see cref="IChicken"/> expressed in days.
+        /// </summary>
+        int Age { get; }
+
+        /// <summary>
+        /// Gets the pecking order of the <see cref="IChicken"/>. The pecking order determines the priority to
+        /// access for food and nesting locations. 
+        /// </summary>
+        int PeckingOrder { get; }
     }
 }

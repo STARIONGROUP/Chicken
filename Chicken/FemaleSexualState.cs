@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IHen.cs" company="RHEA System S.A.">
+// <copyright file="FemaleSexualState.cs" company="RHEA System S.A.">
 //    Copyright (c) 2019 RHEA System S.A.
 //
 //    Author: Sam Gerené
@@ -25,21 +25,18 @@
 namespace Chicken
 {
     /// <summary>
-    /// The definition of the <see cref="IHen"/> interface. An <see cref="IHen"/> is a female <see cref="IChicken"/>
+    /// Enumeration data-type that expresses the Female sexual state of a <see cref="IHen"/>
     /// </summary>
-    interface IHen : IChicken
+    public enum FemaleSexualState
     {
         /// <summary>
-        /// Gets a value expressing the sexual state, which is age dependent, of the <see cref="IHen"/>
+        /// An adult female chickens over the age of one year.
         /// </summary>
-        FemaleSexualState SexualState { get; }
+        Hen,
 
         /// <summary>
-        /// The action of laying an <see cref="IEgg"/>.
+        /// A female chicken less than one year old.
         /// </summary>
-        /// <returns>
-        /// An instance of <see cref="IEgg"/>
-        /// </returns>
-        IEgg LayAnEgg();
+        Pullet
     }
 }

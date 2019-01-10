@@ -24,11 +24,43 @@
 
 namespace Chicken
 {
+    /// <summary>
+    /// The definition of the <see cref="IRooster"/> interface. An <see cref="IRooster"/> is a male <see cref="IChicken"/>
+    /// </summary>
     interface IRooster : IChicken
     {
-
+        /// <summary>
+        /// Initiate the mating ritual with a <see cref="IHen"/> which may end in mating or not.
+        /// </summary>
+        /// <param name="hen"></param>
         void Court(IHen hen);
 
+        /// <summary>
+        /// Come together with a <see cref="IHen"/> to breed.
+        /// </summary>
+        /// <param name="hen">
+        /// The <see cref="IHen"/> with which the <see cref="IRooster"/> is mating.
+        /// </param>
         void Mate(IHen hen);
+
+        /// <summary>
+        /// Executes a loud and sometimes shrill call and sends a territorial signal to other roosters.
+        /// </summary>
+        void Crow();
+
+        /// <summary>
+        /// Castrate the <see cref="IRooster"/>.
+        /// </summary>
+        void Castrate();
+
+        /// <summary>
+        /// A value indicating whether the <see cref="IRooster"/> is castrated or not.
+        /// </summary>
+        bool IsCastrated { get; }
+
+        /// <summary>
+        /// Gets a value expressing the sexual state, which is age dependent, of the <see cref="IRooster"/>
+        /// </summary>
+        MaleSexualState SexualState { get; }
     }
 }
